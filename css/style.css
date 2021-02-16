@@ -1,0 +1,197 @@
+/*STARTER CODE*/
+
+/*
+We have started some of the selectors for you.
+For others we have provided hints on what the selectors should be.
+There are some missing selectors.
+
+Make sure to learn what the starter code does!!
+*/
+
+/*STARTER CODE - DO NOT CHANGE*/
+main{
+  margin-bottom: 100px;
+}
+
+caption{
+  margin:5px 0px;
+}
+
+tr{
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+/*END STARTER CODE*/
+
+body{
+  font-family: "Andika", sans-serif;
+  background-image: url("../images/pigeon-background.JPEG");
+  background-color: #DDDDDD;
+  background-repeat: no-repeat;
+
+
+
+  color: #000000;
+  font-size: 16px;
+  margin: 1.2em;
+  background-size: cover ;
+  background-position: center;
+
+  /*Req 1*/
+}
+
+h1{
+  color: #c12258;
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+
+  /*Req 2*/
+}
+
+p{
+  padding-top: 15px;
+  /*Req 3*/
+}
+
+a{
+  color: #C12258;
+  font-size: 16px;
+  text-decoration-style: wavy;
+  /*Req 4*/
+}
+
+/*Req 5*/
+/*Add selector and rule here*/
+*:focus {
+  border-style: dashed 3px;
+  border-color: #417243;
+  /* not sure if i did the focus and universal selector correct here */
+}
+
+
+/*Req 6a*/
+td{
+  text-align: center;
+  border-top: 2px solid black;
+  padding: 10px;
+}
+
+/*Req 6b*/
+/* are always at least 125px wide, with 10px
+ of padding. Column header text is white, 
+centered horizontally and vertically, and
+ uppercase with a dark red background (#7e0820). */
+.colhead{
+  width: 125px;
+  padding: 10px;
+  vertical-align: middle;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-color: #7e0820;
+  /* check if vertical and horizontal centering
+  donr right */
+  /* 125px wide */
+
+
+}
+/*Req 6c*/
+/* Row headers have a consistent 2px black border.
+  Only use the border property on the sides that 
+  aren’t touching an existing border. (See example.)
+ */
+.rowhead{
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+
+/*Req 6d*/
+/* Every odd numbered table row has a transparent background.
+ */
+
+tr:nth-child(odd){
+  background-color: transparent;
+}
+
+/*Req 6e*/
+/* Every even numbered table row has a grey background (#D1D1D1)
+ */
+tr:nth-child(even){
+  background: rgba(209, 209, 209, 1);
+}
+/*Req 6f*/
+/* Hovering over a row changes it to the same 
+background color as the column header, but with 
+an alpha transparency of .25 so don’t use 
+hexadecimal.
+ */
+
+tr:hover{
+  background-color: rgba(126, 8, 32, 0.25);
+}
+
+
+/*Req 7*/
+
+
+/* Should have a specialized border with:
+2px black border around the exterior (provided in starter code).
+10px radius rounded exterior corners ** 
+The rounded corners are a challenge problem - you are expected to struggle on this component.
+It is fine if there is some white space between the border and the table cells at the edge.
+HINT: You will need to round the corners of the table AND the corner cells. How can you use pseudeoclasses 
+to make sure the outer cells are rounded no matter how big the table is?   
+(You need extra code to make sure only the *outside* borders are rounded, not all of the cells.)
+ */
+
+ table{
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+ /* border collapse property*/
+thead tr:first-child th:first-child{
+  border-top-left-radius: 10px;
+}
+
+thead tr:first-child th:last-child{
+  border-top-right-radius: 10px;
+}
+
+tbody tr:last-child td:first-child{
+  border-bottom-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 10px;
+}
+
+/*Add selectors and rules here*/
+
+
+/*Req 8*/
+/* Footer is always at least 75px tall.
+Footer is always at the bottom of the viewport,
+ regardless of screen size.
+ */
+footer{
+  width:100%;
+  background:#000000;
+  text-align:center;
+  color: #FFFFFF;
+  bottom: 0;
+  height: 75px;
+
+  /* why is it position:fixed?? That's correct version */
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* what more can you do 
+  to get rid of footer whitespace? */
+}
+
