@@ -56,7 +56,8 @@ p{
 }
 
 a{
-  color: #C12258;
+  /* color: #C12258; */
+  color: #B21F50;
   font-size: 16px;
   text-decoration-style: wavy;
   /*Req 4*/
@@ -84,7 +85,7 @@ td{
 centered horizontally and vertically, and
  uppercase with a dark red background (#7e0820). */
 .colhead{
-  width: 125px;
+  width: 126px;
   padding: 10px;
   vertical-align: middle;
   text-align: center;
@@ -184,7 +185,7 @@ footer{
   text-align:center;
   color: #FFFFFF;
   bottom: 0;
-  height: 75px;
+  height: 76px;
 
   /* why is it position:fixed?? That's correct version */
   position:fixed;
