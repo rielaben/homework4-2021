@@ -85,7 +85,7 @@ td{
 centered horizontally and vertically, and
  uppercase with a dark red background (#7e0820). */
 .colhead{
-  width: 150px;
+  min-width: 125px;
   padding: 10px;
   vertical-align: middle;
   text-align: center;
@@ -112,14 +112,14 @@ centered horizontally and vertically, and
 /* Every odd numbered table row has a transparent background.
  */
 
-tr:nth-child(odd){
+tbody tr:nth-child(odd){
   background: transparent;
 }
 
 /*Req 6e*/
 /* Every even numbered table row has a grey background (#D1D1D1)
  */
-tr:nth-child(even){
+tbody tr:nth-child(even){
   background: rgba(209, 209, 209, 1);
 }
 /*Req 6f*/
@@ -129,7 +129,7 @@ an alpha transparency of .25 so don’t use
 hexadecimal.
  */
 
-tr:hover{
+tbody tr:hover{
   background-color: rgba(126, 8, 32, 0.25);
 }
 
@@ -184,9 +184,9 @@ footer{
   background:#000000;
   text-align:center;
   color: #FFFFFF;
-  /* height: 100px; */
-  padding-top: 50px;
-  padding-bottom: 50px;
+  min-height: 75px;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
   position:fixed;
   bottom: 0;
   left: 0;
