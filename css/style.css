@@ -65,10 +65,10 @@ a{
 /*Req 5*/
 /*Add selector and rule here*/
 *:focus {
-  border-style: dashed 3px;
-  border-color: #417243;
+  border: dashed 3px #417243;
   /* not sure if i did the focus and universal selector correct here */
 }
+
 
 
 /*Req 6a*/
