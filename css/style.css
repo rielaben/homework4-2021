@@ -85,7 +85,7 @@ td{
 centered horizontally and vertically, and
  uppercase with a dark red background (#7e0820). */
 .colhead{
-  width: 126px;
+  width: 150px;
   padding: 10px;
   vertical-align: middle;
   text-align: center;
@@ -113,7 +113,7 @@ centered horizontally and vertically, and
  */
 
 tr:nth-child(odd){
-  background-color: transparent;
+  background: transparent;
 }
 
 /*Req 6e*/
@@ -130,7 +130,7 @@ hexadecimal.
  */
 
 tr:hover{
-  background-color: rgba(126, 8, 32, 0.25);
+  background: rgba(126, 8, 32, 0.25);
 }
 
 
@@ -147,7 +147,7 @@ to make sure the outer cells are rounded no matter how big the table is?
 (You need extra code to make sure only the *outside* borders are rounded, not all of the cells.)
  */
 
- table{
+table{
   margin-left: auto;
   margin-right: auto;
   border: 2px solid #000000;
@@ -163,12 +163,12 @@ thead tr:first-child th:last-child{
   border-top-right-radius: 10px;
 }
 
-tbody tr:last-child td:first-child{
-  border-bottom-left-radius: 10px;
-}
-
 tbody tr:last-child td:last-child{
   border-bottom-right-radius: 10px;
+}
+
+tbody tr:last-child th:first-child{
+  border-bottom-left-radius: 10px;
 }
 
 /*Add selectors and rules here*/
@@ -184,10 +184,7 @@ footer{
   background:#000000;
   text-align:center;
   color: #FFFFFF;
-  bottom: 0;
-  height: 76px;
-
-  /* why is it position:fixed?? That's correct version */
+  height: 100px;
   position:fixed;
   bottom: 0;
   left: 0;
